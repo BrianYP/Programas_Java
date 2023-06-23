@@ -1,0 +1,3 @@
+Ventas,10,5
+cali,30,3
+cucuta,40,5

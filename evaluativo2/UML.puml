@@ -1,0 +1,55 @@
+startuml
+class Empleado {
+- String nombre
+- int edad
+- double sueldo
++ String getNombre()
++ void setNombre(String)
++ int getEdad()
++ void setEdad(int)
++ double getSueldo()
++ void setSueldo(double)
+}
+class Metodos {
+~ String nombreEmpresa
+~ String nitEmpresa
+~ String direccionEmpresa
+~ int contador
+~ Empresa empresa
+~ Empleado empleado
++ void menuDesple()
++ void agregarDepartamento(Empresa,Empleado)
+}
+class Empresa {
+- String nit
+- String direccon
+- ArrayList<Departamento> listaDepart
++ String getNit()
++ void setNit(String)
++ String getDireccon()
++ void setDireccon(String)
++ void setListaDepart(ArrayList<Departamento>)
++ ArrayList<Departamento> getListaDepart()
++ void agregarDepartamento(Departamento)
++ int getCantidadPers()
++ float calcularPromeSueldoEmpre()
+}
+class Departamento {
+- String nombreDepart
+- ArrayList<Empleado> listaEmpleados
++ String getNombreDepart()
++ void setNombreDepart(String)
++ ArrayList<Empleado> getListaEmpleados()
++ void setListaEmpleados(ArrayList<Empleado>)
++ void agregarEmple(Empleado)
++ int getCantidadEmple()
++ double calcularPromDepart()
+}
+class Main {
++ {static} void main(String[])
+}
+
+
+Departamento <|-- Empleado
+Departamento <|-- Empresa
+@enduml

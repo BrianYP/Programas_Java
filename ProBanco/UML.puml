@@ -1,0 +1,36 @@
+@startuml
+class Main {
++ {static} void main(String[])
++ {static} int buscarNCuentas(Cuenta[],int)
+}
+class Vector {
+- String nombre
+- String apllido
+- String dni
+~ Cuenta[] vect
++ String getNombre()
++ void setNombre(String)
++ String getApllido()
++ void setApllido(String)
++ String getDni()
++ void setDni(String)
++ Cuenta[] getVect()
++ void setVect(Cuenta[])
++ double consultarSaldo(int)
++ void ingresarDinero(int,double)
++ void retirarDinero(int,double)
+}
+class Cuenta {
+- boolean estado
+- int numeroCuenta
+- double saldo
++ boolean isEstado()
++ void setEstado(boolean)
++ long getNumeroCuenta()
++ void setNumeroCuenta(int)
++ double getSaldo()
++ void setSaldo(double)
++ void depositarDinero(double)
++ void retirarDinero(double)
+}
+@enduml

@@ -1,0 +1,21 @@
+Información de la empresa
+Nombre: Inversiones Otraparte
+NIT: 125478512-6
+Dirección: Carrera 25 No 38 - 52
+
+Información del departamento auxiliar
+Cantidad de personas: 1
+Promedio de sueldo: 20000.0
+Nombre de la persona: null
+Edad de la persona: 14
+Sueldo de la persona: 20000.0
+
+
+Información del departamento reparacion
+Cantidad de personas: 1
+Promedio de sueldo: 45.0
+Nombre de la persona: null
+Edad de la persona: 400
+Sueldo de la persona: 45.0
+
+

@@ -1,0 +1,56 @@
+@startuml
+class ListaLSE {
+- Nodo punta
++ Nodo getPunta()
++ void setPunta(Nodo)
+}
+class Metodos {
+~ ListaLSE lse
++ boolean listaVacia()
++ void delete(Nodo)
++ int contarNodo()
++ void imprimirLista()
++ boolean insertarPrincipio(Nodo)
++ boolean insertarFinal(Nodo)
++ Nodo buscarListaDesordenada(String)
++ boolean buscarListaOrdenada(String)
++ boolean borarPorRefe(String)
++ void modificarGame(String)
++ void ranking()
+}
+class Main {
++ {static} void main(String[])
+}
+class menuDesple {
+~ Scanner entrada
+~ Metodos mt
+~ int opcion
++ void MenuDesplegable()
++ void insertP()
++ void insertF()
++ void buscarDesordenada()
++ void buscarOrdenada()
++ void contarGame()
++ void borrarRefe()
+}
+class Nodo {
+- Nodo liga
+- String nombre
+- String genero
+- String campana
+- int horas
+- boolean estado
++ Nodo getLiga()
++ void setLiga(Nodo)
++ String getNombre()
++ void setNombre(String)
++ String getGenero()
++ void setGenero(String)
++ String getCampana()
++ void setCampana(String)
++ int getHoras()
++ void setHoras(int)
++ boolean isEstado()
++ void setEstado(boolean)
+}
+@enduml

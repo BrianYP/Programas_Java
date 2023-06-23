@@ -1,0 +1,55 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class Empleado {
+- String nombre
+- int edad
+- double sueldo
+~ Empresa[] vectEmple
++ String getNombre()
++ void setNombre(String)
++ int getEdad()
++ void setEdad(int)
++ double getSueldo()
++ void setSueldo(double)
++ Empresa[] getVectEmple()
++ void setVectEmple(Empresa[])
++ void borarEmple(Empleado[],String)
++ double promedioSueldo(Empleado[])
++ void verEmpleados(Empleado[])
+}
+class Empresa {
+- String nombreEmpre
+- int nit
+- String direccon
++ String getNombreEmpre()
++ void setNombreEmpre(String)
++ int getNit()
++ void setNit(int)
++ String getDireccon()
++ void setDireccon(String)
++ void datosEmpresa()
+}
+class Departamento {
+- String nombreDepart
+- int cantidadDepart
+- int numeroPer
+~ Departamento[] vecDepa
++ String getNombreDepart()
++ void setNombreDepart(String)
++ int getCantidadDepart()
++ void setCantidadDepart(int)
++ int getNumeroPer()
++ void setNumeroPer(int)
++ Departamento[] getVecDepa()
++ void setVecDepa(Departamento[])
++ void borarDepart(Departamento[],String)
++ void modificarDepart(Departamento[],String)
++ void verDepartaments(Departamento[])
+}
+
+
+Departamento <|-- Empleado
+Departamento <|-- Empresa
+@enduml

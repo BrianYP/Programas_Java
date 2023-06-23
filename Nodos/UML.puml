@@ -1,0 +1,31 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class ListaLSE {
+- Nodo punta
++ Nodo getPunta()
++ void setPunta(Nodo)
++ boolean ListaVacia()
++ boolean InsertarAPrincipio(Nodo)
++ boolean InsertarAFinal(Nodo)
++ Nodo buscarListaDesordenada(String)
++ boolean buscarListaOrdenada(String)
++ boolean InsertarPorRefe(Nodo,String)
++ int contarNodos()
++ void imprimirLista()
++ boolean borrarPorReferencia(String)
++ boolean borrarListaLSEPunta()
++ boolean borrarListaLSEUltimo()
++ boolean borrarPorPosicion(int)
++ void delete(Nodo)
+}
+class Nodo {
+- Nodo liga
+- String contenido
++ Nodo getLiga()
++ void setLiga(Nodo)
++ String getContenido()
++ void setContenido(String)
+}
+@enduml

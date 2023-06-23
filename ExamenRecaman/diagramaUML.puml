@@ -1,0 +1,54 @@
+@startuml
+class datosG {
++ {static} void datoss()
+}
+class animal {
+- String nombre
+- String raza
+- String edad
+- String peso
+- String identificacion
++ String getNombre()
++ void setNombre(String)
++ String getRaza()
++ void setRaza(String)
++ String getEdad()
++ void setEdad(String)
++ String getPeso()
++ void setPeso(String)
++ String getIdentificacion()
++ void setIdentificacion(String)
+}
+class persona {
+- String nombreC
+- String apellidoC
+- String cedulaC
+- String telefonoC
+- String direccionC
++ String getNombreC()
++ void setNombreC(String)
++ String getApellidoC()
++ void setApellidoC(String)
++ String getCedulaC()
++ void setCedulaC(String)
++ String getTelefonoC()
++ void setTelefonoC(String)
++ String getDireccionC()
++ void setDireccionC(String)
+}
+class Main {
++ {static} void main(String[])
++ {static} void validacion(int)
+}
+class medicamentos {
+- String nombreDisis
+- String descripcionDosis
+- String dosis
++ String getNombreDisis()
++ void setNombreDisis(String)
++ String getDescripcionDosis()
++ void setDescripcionDosis(String)
++ String getDosis()
++ void setDosis(String)
+}
+@enduml

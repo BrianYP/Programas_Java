@@ -1,0 +1,47 @@
+@startuml
+class listaempresa.Lista {
+- Nodo cabeza
+- int tamano
++ boolean estaVacia()
++ int getTamano()
++ void IngresarEmpleado(String,String,double,int,String,String)
++ String buscarEmpleado(String)
++ String promedioSalario()
++ void eliminarPorCedula(String)
++ void aumentoSalarial(double)
++ String imprimirLista()
+}
+class listaempresa.ListaEmpresa {
++ {static} void main(String[])
+- {static} int obtenerEntero()
+- {static} double obtenerDouble()
+- {static} String obtenerTexto()
+}
+class listaempresa.Nodo {
+- String cedula
+- String nombre
+- double salario_basico
+- int estrato
+- String direccion
+- String telefono
+- Nodo siguiente
+- Nodo anterior
++ String getcedula()
++ void setcedula(String)
++ String getNombre()
++ void setNombre(String)
++ double getSalario_basico()
++ void setSalario_basico(double)
++ int getEstrato()
++ void setEstrato(int)
++ String getDireccion()
++ void setDireccion(String)
++ String getTelefono()
++ void setTelefono(String)
++ Nodo getSiguiente()
++ void setSiguiente(Nodo)
++ Nodo getAnterior()
++ void setAnterior(Nodo)
++ String toString()
+}
+@enduml

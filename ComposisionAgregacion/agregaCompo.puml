@@ -1,0 +1,22 @@
+@startuml
+class estado {
++ void licuar()
++ void apagar()
+}
+class licuadora {
++ {static} void main(String[])
+}
+class motor {
+- String serie
+- int velocidad
++ String getSerie()
++ void setSerie(String)
++ int getVelocidad()
++ void setVelocidad(int)
++ void encendido()
++ void apagado()
++ void mostrar()
+}
+motor --o licuadora
+estado --o licuadora
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+class Polinomio {
+- NodoTermino punta
++ void setPunta(NodoTermino)
++ NodoTermino getPunta()
+}
+class Metodos {
+~ Polinomio poli
++ boolean polinomioVacio()
++ void insertarTermino(float,int)
++ void mostrarPolinomio()
++ boolean eliminarTermino(int)
++ Metodos sumar(Metodos)
+}
+class Main {
++ {static} void main(String[])
+}
+class NodoTermino {
+- NodoTermino liga
+- int exponente
+- float coeficiente
++ NodoTermino getLiga()
++ void setLiga(NodoTermino)
++ int getExponente()
++ void setExponente(int)
++ float getCoeficiente()
++ void setCoeficiente(float)
+}
+class MenuDesple {
++ Scanner entrada
+~ Metodos a
+~ Metodos b
+~ Metodos c
++ void menuDesplegable()
++ void contenido()
++ void numPolinomio()
++ void mostr()
++ void sumA()
++ void elimin()
+}
+@enduml

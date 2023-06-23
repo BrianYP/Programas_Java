@@ -1,0 +1,30 @@
+@startuml
+class tiendaGames {
++ {static} void main(String[])
+}
+class videoJuego {
+- String titulo
+- int horas
+- boolean estado
+- String genero
+- String campana
+~ videoJuego[] vect
++ String getTitulo()
++ void setTitulo(String)
++ int getHoras()
++ void setHoras(int)
++ boolean isEstado()
++ void setEstado(boolean)
++ String getGenero()
++ void setGenero(String)
++ String getCampana()
++ void setCampana(String)
++ videoJuego[] getVect()
++ void setVect(videoJuego[])
++ void eliminarJuego(videoJuego[],String)
++ void modificarGame(videoJuego[],String)
++ void cambiarEstado(boolean)
++ void verJuegos(videoJuego[])
++ void rankingPorHoras(videoJuego[])
+}
+@enduml

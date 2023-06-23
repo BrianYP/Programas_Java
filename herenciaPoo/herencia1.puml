@@ -1,0 +1,24 @@
+@startuml
+class estudiante {
+- int codigoEstudiante
+- float notaEstudiante
++ void mostrarDatos()
+}
+class Main {
++ {static} void main(String[])
+}
+class persona {
+- String nombre
+- String apellido
+- int edad
++ String getNombre()
++ void setNombre(String)
++ String getApellido()
++ void setApellido(String)
++ int getEdad()
++ void setEdad(int)
+}
+
+
+persona <|-- estudiante
+@enduml

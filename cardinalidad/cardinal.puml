@@ -1,0 +1,10 @@
+@startuml
+class bilioteca {
++String libro
++ void libro()
+}
+class Main {
++ {static} void main(String[])
+}
+bilioteca --> "3..*" Main
+@enduml
